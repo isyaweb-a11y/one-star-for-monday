@@ -34,7 +34,7 @@ def check_line(line: str) -> str:
     assert len(line.split()) <= MAX_WORDS, f"line has {len(line.split())} words"
     assert line == line.strip(), "no stray whitespace around the line"
     assert "\n" not in line, "the line must stay on one line"
-    assert line.endswith("."), "the line should end on its sentence"
+    assert line.endswith(".'"), "the line should end on the manager's quote"
     return line
 
 
